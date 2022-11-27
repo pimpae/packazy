@@ -353,6 +353,57 @@ footer input + button:focus{
   background-position: -49px 0 !important;
   right: 0px !important;
 }
+.sec2 {
+  padding-bottom: 100px;
+}
+.product-boxes{
+  height: 420px;
+  position: relative;
+}
+.product-boxes img{
+  object-fit: cover;
+  height: 420px;
+  z-index: 2;
+} 
+.product-boxes .description{ 
+  width: 100%;
+  height: 420px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(45, 69, 156,.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition:.5s all;
+  opacity: 0;
+} 
+.product-boxes .description:hover{ 
+  opacity: 1;
+} 
+.product-boxes .description span{ 
+  background-color: #fff;
+  padding: 6px 15px;
+  font-size: 12px;
+  font-weight: 700;
+} 
+.product-boxes .description h2{ 
+  color: #fff;
+  margin-top: 20px;
+} 
+.product-boxes .description a{ 
+  color: #fff;
+  font-size: 14px; 
+  text-decoration: underline;
+  text-underline-offset: 4px;
+} 
+
+
+
 
 /* 
 #2d459c
