@@ -44,14 +44,24 @@ a:hover{
   .pc-x{
     display: none !important;
   }  
+  header .navbar-nav.justify-content-center .dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0px;
+  }
 } 
 body{
   font-family: 'Inter';
   font-style:  normal; 
 }
+header .navbar-nav.justify-content-center .dropdown-toggle:after { 
+  content: none
+} 
 header nav{ 
   height: 80px;
   background-color: #2D459C;
+}
+header .navbar-toggler i{ 
+  color: #fff;
 }
 header nav .navbar-collapse .navbar-nav .nav-item { 
   margin-left: 15px;
@@ -63,13 +73,6 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link{
   font-weight: 500;
   line-height: 60px;
 }  
-header .navbar-nav.justify-content-center .dropdown:hover>.dropdown-menu {
-  display: block;
-  margin-top: 0px;
-}
-header .navbar-nav.justify-content-center .dropdown-toggle:after { 
-  content: none
-} 
 header .navbar-nav.justify-content-center .dropdown-menu{
   min-width: 600px;
   width: 600px;
@@ -373,6 +376,7 @@ footer input + button:focus{
   object-fit: cover;
   height: 420px;
   z-index: 2;
+  max-width: 100%;
 } 
 .product-boxes .description{ 
   width: 100%;
@@ -580,3 +584,67 @@ footer input + button:focus{
 
 transition: .33s all ease-out;  
 */  
+
+   
+@media only screen and (max-width: 1024px) { /* MOBILE */
+  header nav .navbar-nav{
+    z-index: 2222;
+    position: relative;
+    background-color: #fff;
+    color: #2D459C;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } 
+  header nav .navbar-collapse .navbar-nav .nav-item .nav-link{ 
+    color: #222;
+    font-weight: 500;
+    line-height: 30px;
+  }  
+  header nav .navbar-collapse .navbar-nav .nav-item { 
+    height: 40px;
+  } 
+  header nav .navbar-collapse .navbar-nav.justify-content-center{ 
+    margin-top: 73px;
+  }
+  header .navbar-nav.justify-content-center .dropdown-menu {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding: 8px;
+    border-radius: 0px !important;
+    margin-top: -1px;
+  }
+  header .navbar-nav.justify-content-end{
+    display: none;
+  }
+  .navbar-light .navbar-toggler { 
+    border-color: rgba(0,0,0,0); 
+    position: absolute;
+    right: 130px
+  }
+  header .navbar-brand{
+    position: absolute;
+    left: 20px;
+  }
+  .navbar-light .navbar-toggler:active { 
+    box-shadow: unset !important;
+    border-color: rgba(0,0,0,0) !important;
+    outline: unset !important;
+  }
+  .navbar-light .navbar-toggler:focus { 
+    box-shadow: unset !important;
+    border-color: rgba(0,0,0,0) !important;
+    outline: unset !important;
+  } 
+  #carousel1 .carousel-inner .carousel-item > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    margin-bottom: 200px;
+  }
+  .sec1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
