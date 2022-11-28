@@ -648,7 +648,7 @@ transition: .33s all ease-out;
   #carousel1 .carousel-inner .carousel-item > div .box .button { 
     padding: 10px;
     margin-bottom: 20px;
-    width: 320px;
+    width: 80%;
     height: 75px; 
     max-width: 100%;
   }
@@ -657,5 +657,18 @@ transition: .33s all ease-out;
   }
   #carousel1 .carousel-inner .carousel-item > div .box .button a{ 
     font-size: 12px;
+  }
+  .product-boxes {
+    height: 320px;
+    position: relative; 
+  }
+  .product-boxes .description{
+    height: 320px; 
+  }
+  .product-boxes img { 
+    height: 320px; 
+  }
+  .sec2 .container-fluid .col-xl-4{
+    margin-bottom: 15px;
   }
 }
