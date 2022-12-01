@@ -582,8 +582,9 @@ footer input + button:focus{
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.boxes-header{
-  height: 145px;
+.boxes-header{ 
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #FFF3E1;
   display:flex;
   justify-content:center;
@@ -811,8 +812,9 @@ transition: .33s all ease-out;
     display: none;
   }
   .boxes-header{
-    text-align: center;
-    height: 200px;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .boxes-header .breadcrumb{
     text-align: center; 
