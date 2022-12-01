@@ -593,6 +593,7 @@ footer input + button:focus{
 .boxes-header .breadcrumb{
   background-color: transparent;
   margin-bottom: 0px;
+  justify-content: center;
 }
 .boxes-header .breadcrumb a{
   color:#222;
@@ -603,6 +604,9 @@ footer input + button:focus{
 .boxes-header .breadcrumb a:after{
   content: "/";
   padding: 0 5px;
+}
+.boxes-header .breadcrumb a:last-child:after{
+  content: ""; 
 }
 .boxes-header h1{ 
   text-align: center;
