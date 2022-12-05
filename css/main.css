@@ -601,6 +601,12 @@ footer input + button:focus{
   letter-spacing: 0.5px;
   line-height: 24px;
 }
+.boxes-header .breadcrumb span{
+  color:#222;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
 .boxes-header .breadcrumb a:after{
   content: "/";
   padding: 0 5px;
@@ -800,7 +806,64 @@ footer input + button:focus{
   left: 270px;
   top: 80px;
 }
+.product-main-description .product-review i.active{
+  color: #F2A935;
+}
+.product-main-description .product-review i{
+  color: #D6D6D6;
+}
+.product-main-description h2{
+  word-break: break-word;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #222;
+  margin-bottom: 10px;
+} 
+.product-main-description h3{
+  word-break: break-word;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #222;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+} 
 
+.filter-box .facet-checkbox > input[type="radio"]:checked ~ .color-lable { 
+  box-shadow: 0 0 0 1px #999;
+  border: 1px solid #fff;
+}  
+.filter-box .facet-checkbox input[type=radio] {
+  position: absolute;
+  opacity: 1;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: -0.3rem;
+  left: -0.3rem;
+  z-index: -1;
+  appearance: none;
+  -webkit-appearance: none; 
+  top:0;
+  left:0;
+} 
+.filter-box .facet-checkbox>input[type=radio]:checked .color-lable { 
+  box-shadow: 0 0 0 1px #999;
+  border: 1px solid #fff;
+} 
+.quantity{
+  display: flex;
+}
+.quantity label{
+  margin-right: 20px;
+}
+.quantity div{
+  border: 1px solid #E5E5E5;
+}
 
 
 
